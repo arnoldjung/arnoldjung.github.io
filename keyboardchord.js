@@ -36,9 +36,8 @@ function getWord(chord) {
   console.log("key: " + key)
   let word
   if(comboMap.has(key)) {
-      let word = comboMap.get(key)
+      word = comboMap.get(key)
       console.log(word)
-
   }
     else {
         word = "NOT FOUND(" + key + ")";
