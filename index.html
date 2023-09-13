@@ -1,9 +1,70 @@
 <html>
 <head>
-  <script src="code.js"></script>
+  <!--<script src="code.js"></script>-->
+  <script src="https://kit.fontawesome.com/33487bf188.js" crossorigin="anonymous"></script>
+  <script>
+    window.onload = function() {
+      const icons = [
+        'eye', 'cow', 'meteor', 'pepper-hot', 'square-person-confined', 'arrows-down-to-people'
+      ];
+      const luckyIndex = Math.floor(Math.random() * icons.length);
+      const luckyIcon = icons[luckyIndex];
+      document.getElementById("luckyIcon").classList.add(`fa-${luckyIcon}`);
+    }
+  </script>
 </head>
+<style>
+  body {
+    background-color: lightblue;
+  }
+  .interests .row {
+    padding-bottom:40px;
+  }
+  .interests i {
+    padding-left:20px;
+    font-size: 50px;
+  }
+</style>
 <body>
-  Hello World <br>
-  <a href="chord_demo.html">Chord Demo</a>
+  <div style="text-align: center;">
+    <h1>
+      Arnold Jung
+    </h1>
+    <i id="luckyIcon" class="fa-solid fa-beat" style="font-size:100px"></i>
+
+    <div class="interests">
+      <h2>Interests</h2>
+      <div class="row">
+        <i class="fa-message fa-solid fa-beat"></i>
+        <i class="fa-teeth-open fa-solid fa-beat"></i>
+        <i class="fa-robot fa-solid fa-beat"></i>
+        <i class="fa-code-branch fa-solid fa-beat"></i>
+        <i class="fa-share-nodes fa-solid fa-beat"></i>
+      </div>
+      <div class="row">
+        <i class="fa-hand-spock fa-solid fa-beat"></i>
+      </div>
+      <div class="row">
+        <i class="fa-rocket fa-solid fa-beat"></i>
+        <i class="fa-car-side fa-solid fa-beat"></i>
+      </div>
+      <div class="row">
+        <i class="fa-guitar fa-solid fa-beat"></i>
+        <i class="fa-mortar-pestle fa-solid fa-beat"></i>
+        <i class="fa-volume-high fa-solid fa-beat"></i>
+      </div>
+    </div>
+    <div class="projects">
+      <h2>Projects</h2>
+      <i class="fa-solid fa-spinner fa-spin"></i>
+      <i class="fa-solid fa-user-secret"></i>
+      <i class="fa-solid fa-spinner fa-spin"></i>
+    </div>
+    <div style="margin-top: 50px;">
+      <a href="https://www.linkedin.com/in/arnold-jung/">
+        <i class="fab fa-linkedin" style="font-size:48px; color:black"></i>
+      </a>
+    </div>
+  </div>
 </body>
 </html>
